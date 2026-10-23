@@ -1,0 +1,306 @@
+
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f5f9;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #263248;
+    line-height: 1.6;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+header {
+    background: linear-gradient(135deg, #0b1f45, #173f7a);
+    color: white;
+    text-align: center;
+    padding: 30px 20px 22px;
+    box-shadow: 0 4px 15px rgba(11, 31, 69, 0.15);
+}
+
+header h1 {
+    margin-bottom: 22px;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* =========================
+   MENU DE NAVEGAÇÃO
+========================= */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 9px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #12346a;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+.produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+/* Cartões */
+article {
+    background-color: white;
+    width: 280px;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #e5eaf2;
+    box-shadow: 0 5px 18px rgba(25, 45, 80, 0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(25, 45, 80, 0.14);
+}
+
+/* Títulos dos produtos */
+article h2 {
+    color: #153d78;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+/* Imagens dos produtos */
+article img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+/* Descrições */
+article p {
+    color: #586579;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Botões Saiba Mais */
+article a {
+    display: inline-block;
+    background-color: #16458a;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 11px 17px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+article a:hover {
+    background-color: #2464b5;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   TÍTULO DA PÁGINA DE CONTATO
+========================= */
+main h2 {
+    text-align: center;
+    color: #12346a;
+    font-size: 29px;
+    font-weight: 750;
+    margin: 35px 20px 25px;
+}
+
+/* =========================
+   FORMULÁRIO DE CONTATO
+========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: calc(100% - 40px);
+    max-width: 480px;
+    margin: 0 auto 45px;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #e5eaf2;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(25, 45, 80, 0.08);
+}
+
+/* Rótulos */
+form label {
+    color: #243e68;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Campos de entrada */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5dce7;
+    border-radius: 8px;
+    background-color: #fbfcfe;
+    color: #263248;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Destaque dos campos selecionados */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #2464b5;
+    box-shadow: 0 0 0 3px rgba(36, 100, 181, 0.12);
+    background-color: white;
+}
+
+/* Botão Enviar */
+form button {
+    background-color: #16458a;
+    color: white;
+    padding: 13px 20px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: inherit;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #2464b5;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+    background-color: #0b1f45;
+    color: #e4eaf4;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 45px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+    header {
+        padding: 25px 15px 20px;
+    }
+
+    header h1 {
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 13px;
+        font-size: 14px;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        margin: 30px auto;
+    }
+
+    article {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    article img {
+        height: 220px;
+    }
+
+    main h2 {
+        font-size: 25px;
+        margin-top: 28px;
+    }
+
+    form {
+        padding: 22px;
+    }
+
+    footer {
+        padding: 22px 15px;
+    }
+}
+
+/* Celulares menores */
+@media (max-width: 380px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    .produtos {
+        padding: 0 14px;
+    }
+
+    form {
+        width: calc(100% - 28px);
+        padding: 18px;
+    }
+}
